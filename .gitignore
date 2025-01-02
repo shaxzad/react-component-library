@@ -1,54 +1,61 @@
-*storybook.log
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# compiled output
-dist
-tmp
-/out-tsc
-.env
-# dependencies
-node_modules
+# Build output
+dist/
+*.tgz
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Storybook
+storybook-static/
+.out/
+.storybook-cache/
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# TypeScript
+*.tsbuildinfo
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# System Files
+# Vite
+.vite/
+
+# IDE/Editor specific files
+.vscode/
+.idea/
 .DS_Store
+*.swp
+*.swo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Coverage reports
+coverage/
+
+# Test and lint
+jest/
+*.test.*
+*.spec.*
+eslintcache/
+
+# Temporary files
+tmp/
+temp/
+
+# Git-specific
+*.orig
+
+# MacOS-specific
+._*
 Thumbs.db
-
-.nx/cache
-.nx/workspace-data
-
-# Next.js
-.next
-
-# Vim files
-**/*.swp
-**/*.swo
-
-
-# ignore Secrets folder
-.secrets/
-libraries/plugins/src/plugins.ts
